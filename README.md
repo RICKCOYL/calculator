@@ -9,7 +9,7 @@ This project is a calculator, developed using React.
 
 ## Live-Demo
 
-[Calc-App](https://reactcalculatorapp1.herokuapp.com/)
+[Calc-App](https://boring-aryabhata-3c404c.netlify.app/)
 
 
 ## Getting Started
@@ -39,7 +39,7 @@ To get this project up and running locally, "yarn install" is needed to be run i
 
 1. Open Terminal.
 2. Navigate to your desired location to download the contents of this repository.
-3. Copy and paste the following code into the Terminal: git clone https://github.com/mahmoud717/calculator
+3. Copy and paste the following code into the Terminal: git clone https://github.com/RICKCOYL/calculator.git
 4. cd into  Calculator-App
 5. Run "npm install".
 6. Run "npm start".
