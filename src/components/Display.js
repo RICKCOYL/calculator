@@ -1,11 +1,18 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 function Display({ result }) {
   return (
     <div>
-      <div className="user-input">{result}</div>
+      <div>{result}</div>
     </div>
   );
 }
 
+Display.propTypes = {
+  result: PropTypes.string,
+};
+
+Display.defaultProps = {
+  result: 'div',
+};
 export default Display;

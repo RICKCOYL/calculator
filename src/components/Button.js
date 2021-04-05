@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Button(props) {
   const { buttonName } = props;
   return (
@@ -8,5 +10,13 @@ function Button(props) {
     </div>
   );
 }
+
+Button.propTypes = {
+  buttonName: PropTypes.string,
+};
+
+Button.defaultProps = {
+  buttonName: 'button',
+};
 
 export default Button;
