@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function Display({ result }) {
   return (
-    <div>
+    <div className="display">
       <div>{result}</div>
     </div>
   );
@@ -13,6 +13,6 @@ Display.propTypes = {
 };
 
 Display.defaultProps = {
-  result: 'div',
+  result: '0',
 };
 export default Display;
