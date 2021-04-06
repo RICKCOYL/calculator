@@ -5,10 +5,10 @@ import calculate from '../logic/calculate';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Display />
       <ButtonPanel />
-    </div>
+    </>
   );
 }
 
