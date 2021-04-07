@@ -15,7 +15,7 @@ function ButtonPanel({ clickHandler }) {
         <Button buttonName="7" clickHandler={clickHandler} />
         <Button buttonName="8" clickHandler={clickHandler} />
         <Button buttonName="9" clickHandler={clickHandler} />
-        <Button buttonName="x" clickHandler={clickHandler} />
+        <Button buttonName="X" clickHandler={clickHandler} />
       </div>
       <div className="d-flex">
         <Button buttonName="4" clickHandler={clickHandler} />
