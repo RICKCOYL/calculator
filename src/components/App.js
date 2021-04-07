@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unused-state */
-/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -25,7 +23,7 @@ class App extends Component {
     return (
       <>
         <Display />
-        <ButtonPanel />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
