@@ -9,7 +9,7 @@ This project is a calculator, developed using React.
 
 ## Live-Demo
 
-[Calc-App](https://eloquent-northcutt-d4fd00.netlify.app/)
+[Calc-App](https://heuristic-knuth-483eaa.netlify.app/)
 
 
 ## Getting Started
