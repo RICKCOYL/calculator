@@ -1,40 +1,45 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-function ButtonPanel() {
+function ButtonPanel({ clickHandler }) {
   return (
     <div id="btn-panel">
-      <div className="">
-        <Button buttonName="AC" />
-        <Button buttonName="+/-" />
-        <Button buttonName="%" />
-        <Button buttonName="÷" />
+      <div className="d-flex">
+        <Button buttonName="AC" clickHandler={clickHandler} />
+        <Button buttonName="+/-" clickHandler={clickHandler} />
+        <Button buttonName="%" clickHandler={clickHandler} />
+        <Button buttonName="÷" clickHandler={clickHandler} />
       </div>
-      <div className="">
-        <Button buttonName="7" />
-        <Button buttonName="8" />
-        <Button buttonName="9" />
-        <Button buttonName="x" />
+      <div className="d-flex">
+        <Button buttonName="7" clickHandler={clickHandler} />
+        <Button buttonName="8" clickHandler={clickHandler} />
+        <Button buttonName="9" clickHandler={clickHandler} />
+        <Button buttonName="X" clickHandler={clickHandler} />
       </div>
-      <div className="">
-        <Button buttonName="4" />
-        <Button buttonName="5" />
-        <Button buttonName="6" />
-        <Button buttonName="-" />
+      <div className="d-flex">
+        <Button buttonName="4" clickHandler={clickHandler} />
+        <Button buttonName="5" clickHandler={clickHandler} />
+        <Button buttonName="6" clickHandler={clickHandler} />
+        <Button buttonName="-" clickHandler={clickHandler} />
       </div>
-      <div className="">
-        <Button buttonName="1" />
-        <Button buttonName="2" />
-        <Button buttonName="3" />
-        <Button buttonName="+" />
+      <div className="d-flex">
+        <Button buttonName="1" clickHandler={clickHandler} />
+        <Button buttonName="2" clickHandler={clickHandler} />
+        <Button buttonName="3" clickHandler={clickHandler} />
+        <Button buttonName="+" clickHandler={clickHandler} />
       </div>
-      <div className="">
-        <Button buttonName="0" />
-        <Button buttonName="." />
-        <Button buttonName="=" />
+      <div className="d-flex">
+        <Button buttonName="0" clickHandler={clickHandler} />
+        <Button buttonName="." clickHandler={clickHandler} />
+        <Button buttonName="=" clickHandler={clickHandler} />
       </div>
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
