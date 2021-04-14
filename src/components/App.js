@@ -33,8 +33,10 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <Display total={total} next={next} operation={operation} />
-            <ButtonPanel clickHandler={this.handleClick} />
+            <div className="app">
+              <Display total={total} next={next} operation={operation} />
+              <ButtonPanel clickHandler={this.handleClick} />
+            </div>
           </Route>
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
