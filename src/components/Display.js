@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import './style.css';
 
 const Display = ({ total, next, operation }) => (
-  <>
+  <div className="display">
     <h1>
       {total}
       {operation}
       {next}
     </h1>
 
-  </>
+  </div>
 );
 
 Display.defaultProps = {

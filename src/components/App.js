@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 import '../css/index.css';
+import Navbar from './Navbar';
+import Contact from './Contact';
+import About from './About';
 
 class App extends Component {
   constructor(props) {
@@ -25,11 +29,19 @@ class App extends Component {
     const { total, next, operation } = this.state;
 
     return (
-      <>
-
-        <Display total={total} next={next} operation={operation} />
-        <ButtonPanel clickHandler={this.handleClick} />
-      </>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <div className="app">
+              <Display total={total} next={next} operation={operation} />
+              <ButtonPanel clickHandler={this.handleClick} />
+            </div>
+          </Route>
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </Router>
     );
   }
 }
