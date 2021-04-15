@@ -87,6 +87,7 @@
     max-width: 100%;
   }
 
-.equal {
-  width: 175px;
+  .equal {
+    width: 175px;
+  }
 }
