@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+#btn-panel {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.display {
+  background-color: silver;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 120px;
+}
