@@ -87,11 +87,7 @@
     max-width: 100%;
   }
 
-  .app {
-    /* margin-top: 10px; */
+  .equal {
+    width: 175px;
   }
-}
-
-.equal {
-  width: 175px;
 }

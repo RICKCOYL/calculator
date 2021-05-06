@@ -3,11 +3,12 @@ import './style.css';
 
 const Display = ({ total, next, operation }) => (
   <div className="display">
-    <h1>
+    <h1>CALCULATOR</h1>
+    <h2>
       {total}
       {operation}
       {next}
-    </h1>
+    </h2>
 
   </div>
 );
